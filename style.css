@@ -7,6 +7,15 @@
     url(./fonts/OpenSans.woff2);
 }
 
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(./fonts/BebasNeue-Regular.eot),
+    url(./fonts/BebasNeue-Regular.ttf),
+    url(./fonts/BebasNeue-Regular.otf),
+    url(./fonts/BebasNeue-Regular.woff),
+    url(./fonts/BebasNeue-Regular.woff2);
+}
+
 *{
     margin: 0;
     box-sizing: border-box;
