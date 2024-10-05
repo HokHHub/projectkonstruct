@@ -16,12 +16,212 @@
     url(./fonts/BebasNeue-Regular.woff2);
 }
 
-*{
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .container{
+    padding-left: 17.5vh;
+    padding-right: 17.7vh;
+  }
+
+  .header {
+    background-image: url('./img/bg_1.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header__logo {
+    position: absolute;
+    top: 41px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header__content {
+    position: absolute;
+    top: 48vh;
+    left: 50%;
+    transform: translateX(-48%);
+    text-align: center;
+  }
+  
+  .content__title {
+    color: #FFF;
+    font-family: "BebasNeue", sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5.709px;
+  }
+  
+  .content__text {
+    color: #FFF;
+    text-align: center;
+    font-family: "OpenSans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .header__scroll {
+    position: absolute;
+    bottom: 71px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+    font-family: "OpenSans";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.7px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 257px 23px 251px;
 }
 
-.container{
-    max-width: 940px;
+  .navbar__logo{
+    margin-right: 31vh;
+    width: 79.527px;
+    height: 18px;
+  }
+
+  .navbar__links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__link {
+    color: #48555B;
+    text-align: center;
+    font-family: "OpenSans";
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.091px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar__link:hover {
+    color: #00A4E5;
+}
+
+.our-story {
+    padding: 50px 100px;
+    text-align: center;
+}
+
+.about__title {
+    color: #48555B;
+    text-align: center;
+    font-family: "OpenSans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.306px;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.about__text {
+    padding-right: 30px;
+    margin-left: 118px;
+    text-align: left;
+}
+
+.text__heading {
+    color: #48555B;
+    font-family: "OpenSans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.188px;
+    margin-bottom: 15px;
+    max-width: 405px;
+}
+
+.highlight {
+    color: #00aaff;
+}
+
+.text__paragraph {
+    color: #48555B;
+    font-family: "OpenSans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px; /* 176.923% */
+    letter-spacing: 0.188px;
+    margin-bottom: 15px;
+    max-width: 405px;
+}
+
+.about__cards {
+    display: flex;
+    gap: 20px;
+}
+
+.about__card {
+    position: relative;
+    text-align: center;
+}
+
+.card img {
     width: 100%;
+    height: auto;
+}
+
+.card-text {
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: "OpenSans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px; /* 120.833% */
+    letter-spacing: 0.188px;
+    text-align: left;
+}
+
+hr{
+    border: 1px solid #00A4E5;
+    color: #00A4E5;
+    width: 50px;
+    height: 0px;
+    margin: 11px 50% 0 50%;
+    transform: translate(-50%, -50%);
 }
