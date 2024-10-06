@@ -110,7 +110,7 @@ html{
   }
 
   .navbar__logo{
-    margin-right: 31vh;
+    /* margin-right: 31vh; */
     width: 79.527px;
     height: 18px;
     cursor: pointer;
@@ -121,6 +121,7 @@ html{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    margin-right: 10px;
 }
 
 .navbar__link {
@@ -295,7 +296,7 @@ html{
   color: #00A4E5;
 }
 
-.capabilities_line{
+.capabilities__line{
   border: 1px solid #00A4E5;
   color: #00A4E5;
   width: 50px;
