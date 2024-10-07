@@ -469,6 +469,12 @@ html{
   /* margin-bottom: 23px; */
 }
 
+@media screen and (max-width: 1220px) {
+  .content__title {
+    margin-top: -60px;
+  }
+
+}
 
 @media screen and (max-width: 900px) {
   .about__cards{
@@ -548,5 +554,12 @@ html{
 @media screen and (max-width: 419px) {
   .signup__submit{
     width: 250px;
+  }
+}
+
+
+@media screen and (max-width: 665px) {
+  .content__title {
+    margin-top: -100px;
   }
 }
