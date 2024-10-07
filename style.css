@@ -158,6 +158,7 @@ html{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   /* max-width: 941px;
   width: 100%;
   margin: 0 auto; */
@@ -176,9 +177,10 @@ html{
 }
 
 .container {
-    max-width: 941px;
+    max-width: 961px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
     /* padding-left: 251px;
     padding-right: 257px; */
 }
@@ -379,6 +381,13 @@ html{
   letter-spacing: 0.5px;
   cursor: pointer;
   border: 0;
+  transition: 0.4s;
+}
+
+.advertisment__btn:hover{
+  background-color: white;
+  border: 1px solid #00A4E5;
+  color: #00A4E5;
 }
 
 .footer{
@@ -436,6 +445,13 @@ html{
   background-color: #00A4E5;
   border: 0;
   cursor: pointer;
+  transition: 0.4s;
+}
+
+.signup__submit:hover{
+  background-color: white;
+  border: 1px solid #00A4E5;
+  color: #00A4E5;
 }
 
 .footer__copyright{
@@ -454,9 +470,14 @@ html{
 }
 
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
   .about__cards{
+    justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .about__wrapper{
+    justify-content: center;
   }
 
   .about__text{
@@ -522,4 +543,10 @@ html{
     margin: 0;
     margin-top: 20px;
   } */
+}
+
+@media screen and (max-width: 419px) {
+  .signup__submit{
+    width: 250px;
+  }
 }
