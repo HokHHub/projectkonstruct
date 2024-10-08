@@ -92,6 +92,14 @@ html{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 3.7px;
+    text-decoration: none;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+  }
+
+  .header__scroll:hover {
+    color: black
   }
 
   .navbar {
@@ -288,7 +296,7 @@ html{
   letter-spacing: 0.5px;
   background-color: #00A4E5;
   cursor: pointer;
-  border: 0;
+  border: 1px solid #00A4E5;
   transition: 0.4s;
 }
 
@@ -380,7 +388,7 @@ html{
   font-weight: 700;
   letter-spacing: 0.5px;
   cursor: pointer;
-  border: 0;
+  border: 1px solid #00A4E5;
   transition: 0.4s;
 }
 
@@ -443,7 +451,7 @@ html{
   font-weight: 700;
   letter-spacing: 0.5px;
   background-color: #00A4E5;
-  border: 0;
+  border: 1px solid #00A4E5;
   cursor: pointer;
   transition: 0.4s;
 }
@@ -456,6 +464,7 @@ html{
 
 .footer__copyright{
   padding: 22px 0;
+  text-align: center;
 }
 
 .copyright{
@@ -561,5 +570,12 @@ html{
 @media screen and (max-width: 665px) {
   .content__title {
     margin-top: -100px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .content__title{
+    line-height: 105%;
+    font-size: 54px;
   }
 }
